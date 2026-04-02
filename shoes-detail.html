@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Layout of Shoes Detail</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="page-title">B.1.2 Screen Layout of Shoes Detail</h1>
+
+    <div class="frame">
+      <div class="top-row">
+        <div class="logo-box">Logo</div>
+        <div class="date-box">Date: dd/MM/yyyy</div>
+      </div>
+
+      <div class="content simple-form">
+        <div class="section-title">Shoes Detail</div>
+
+        <div class="form-grid">
+          <label for="detailName">Shoes Name:</label>
+          <input id="detailName" type="text" value="Giày Thể thao" />
+
+          <label for="detailCategory">Category:</label>
+          <select id="detailCategory">
+            <option>Sport</option>
+            <option>Running</option>
+            <option>Casual</option>
+          </select>
+
+          <label for="detailManufacturer">Manufacturer:</label>
+          <input id="detailManufacturer" type="text" value="Bach Dang" />
+
+          <label for="detailPrice">Price(đ):</label>
+          <input id="detailPrice" type="text" value="20" />
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="button">Save</button>
+          <button class="btn" type="button" onclick="window.location.href='./shoes-list.html'">Back</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

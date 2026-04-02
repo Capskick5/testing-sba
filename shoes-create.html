@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Layout of Add New Shoes</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="page-title">B.1.3 Screen Layout of Add New Shoes</h1>
+
+    <div class="frame">
+      <div class="top-row">
+        <div class="logo-box">Logo</div>
+        <div class="date-box">Date: dd/MM/yyyy</div>
+      </div>
+
+      <div class="content simple-form">
+        <div class="section-title">Add New Shoes</div>
+
+        <div class="form-grid">
+          <label for="newName">Shoes Name:</label>
+          <input id="newName" type="text" />
+
+          <label for="newCategory">Category:</label>
+          <select id="newCategory">
+            <option value="">Select category</option>
+            <option>Sport</option>
+            <option>Running</option>
+            <option>Casual</option>
+          </select>
+
+          <label for="newManufacturer">Manufacturer:</label>
+          <input id="newManufacturer" type="text" />
+
+          <label for="newPrice">Price(đ):</label>
+          <input id="newPrice" type="text" />
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="button">Create</button>
+          <button class="btn" type="button" onclick="window.location.href='./shoes-list.html'">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

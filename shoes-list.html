@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Layout of Shoes List</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="page-title">B.1.1 Screen Layout of Shoes List</h1>
+
+    <div class="frame">
+      <div class="top-row">
+        <div class="logo-box">Logo</div>
+        <div class="date-box">Date: dd/MM/yyyy</div>
+      </div>
+
+      <div class="content">
+        <div class="section-title">Shoes List</div>
+
+        <div class="form-grid">
+          <label for="category">Category:</label>
+          <select id="category">
+            <option value=""> </option>
+            <option>Sport</option>
+            <option>Running</option>
+            <option>Casual</option>
+          </select>
+          <div></div>
+          <div></div>
+
+          <label for="shoeName">Shoes Name:</label>
+          <input id="shoeName" type="text" />
+          <button class="btn" type="button">Filter</button>
+          <button class="btn" type="button" onclick="window.location.href='./shoes-create.html'">Add New</button>
+        </div>
+
+        <div class="table-title">Shoes List</div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Shoes Name</th>
+              <th>Category</th>
+              <th>Manufacturer</th>
+              <th>Price(đ)</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Giày Thể thao</td>
+              <td>Sport</td>
+              <td>Bach Dang</td>
+              <td>20</td>
+              <td><a class="action-link" href="#">Delete</a> | <a class="action-link" href="./shoes-detail.html">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="footer-row">
+          <div>Show x of y records</div>
+          <div>Previous 1,2,3 …. Next</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
