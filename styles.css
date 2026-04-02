@@ -87,6 +87,14 @@ select {
   cursor: pointer;
 }
 
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #111;
+}
+
 .table-title {
   font-size: 34px;
   font-weight: 700;
